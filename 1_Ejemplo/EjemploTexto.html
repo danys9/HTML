@@ -1,18 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
-<!--fsdfsdf-->
+<!DOCTYPE html>
+<!--Esto es un comentario
+    Author: López Alejaldre Daniela
+    Date: 03/03/2021
+-->
 
 <head>
-  <title>Estructura de Texto</title>
-  <link rel="stylesheet" type="text/css" href="/css/ejemplo.css" />
+  <title>Estructura de Texto</title> <!--Título que se va a mostrar en las pestañas-->
+  <link rel="stylesheet" type="text/css" href="/css/ejemplo.css" /> <!-- Esta etiqueta hace referencia a otro archivo-->
   <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />  
   <link rel="alternate" type="application/rss+xml" title="Resumen de todos los artículos del blog" href="/feed.xml" />
 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <!--Etiquetas que ayudarán o aparecerán en el motor de búsqueda-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <!--Metadatos, definen lo que se va a mostrar y cómo lo hará-->
   <meta name="description" content="Ejemplo de XHTML y HTML5"/>
   <meta name="keywords" content="HTML5, HTML, XHTML"/>
-  <meta name="author" content="Dannas"/>
-  
+  <meta name="author" content="Danys"/>
+  <!--OpnenGraph-->
+  <meta property= "og:title" content="Estructura de texto" /> <!-- Protocolos de open graph, nos da datos más específicos ¿De dónde obtiene la imagen? Por ejemplo-->
+  <meta property= "og:description"
+  content= "Ejemplo de HTML5"/>
+  <meta property="og:author" content="Daniela L."/>
+
+  <!--Sirve para embeber javascript o algún otro lenguaje-->
   <script type="text/javascript">
     //<![CDATA[
       window.onload = function() { alert("La página se ha cargado exitosamente :)"); }
@@ -26,22 +35,38 @@
   <p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript.
 Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo :)</p>
 </noscript>
-<img src="logotipo.gif" alt="Logotipo de esta página" />
+<img src="../2_HTML5/images/imagen2.png" alt="Logotipo de esta página" />
+<!--De preferencia utilizar rutas relativas alt es el texto que se va a mostrar si la imagen no está presente
+el ancla nos ayuda a ir a una parte del documento (fijando un ancla) o a otro recuerso ../2_HTML5/images/imagen2.png-->
+
 <ul>
-    <li><a href="#">Inicio</a></li>
-    <li><a href="ftp://ftp.ejemplo.com/ruta/archivo.zip" title="Archivo comprimido de los contenidos">Descarga un ZIP</a></li> 
-    <li><a href="mailto:nombre@direccion.com?subject=Solicitud de más información">Solicitar Información</a></li>
+    <li>
+      <a href="#" target="_blank">Inicio</a> <!--El símbolo # hace referencia al mismo documento-->
+    </li>
+    <li>
+      <a href="ftp://ftp.ejemplo.com/ruta/archivo.zip" title="Archivo comprimido de los contenidos">Descarga un ZIP</a>
+      <!--Protocolo hhtps, ftp,  -->
+    </li> 
+    <li>
+      <a href="mailto:nombre@direccion.com?subject=Solicitud de más información">Solicitar Información</a>
+    </li>
   </ul>
-<hr/>
+<hr/> <!--Etiquetas vacías, es un separador, se abre y ahí mismo se cierra-->
+<h1>Lenguajes de marcado.</h1>
 <h2>Lenguajes de marcado.</h2>
-<dl>
+<h3>Lenguajes de marcado.</h3>
+<h4>Lenguajes de marcado.</h4>
+
+<dl> <!--Diccionarios de definiciones enlazados como si fueran un árbol-->
   <dt>SGML</dt>
   <dd>Metalenguaje para la definición de otros lenguajes de marcado</dd>
  
   <dt>XML</dt>
   <dd>Lenguaje basado en SGML y que se emplea para describir datos</dd>
  
+  <!--Completar los siguientes al igual que como están los anteriores, con ese mismo formato-->
   <dt>RSS</dt>
+  <dd>Lorem Ipsum</dd>
   <dt>GML</dt>
   <dt>XHTML</dt>
   <dt>SVG</dt>
@@ -52,20 +77,30 @@ Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo :)</p>
 
 <h2>HTML</h2>
 
-<p>El lenguaje <acronym title="HyperText Markup Language"><strong><em>HTML</em></strong></acronym> es estandarizado 
+<p>El lenguaje <acronym title="HyperText Markup Language">
+                  <!--<b> Bold o Strong, hacen que se ponga en negritas </b>-->
+                  <strong>
+                    <!--<i> Itálica o em, hacen que se ponga cursiva </i>-->
+                      <em>
+                        HTML
+                      </em>
+                  </strong>
+                 </acronym> es estandarizado 
 por el <acronym title="World Wide Web Consortium"><strong><em>W3C</em></strong></acronym>.</p>
 
 <h3>HTML 5</h3>
 <p><acronym title="HyperText Markup Language, versión 5"><strong><em>HTML5</em></strong></acronym> es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. HTML5 especifica dos variantes de sintaxis para HTML: un <em>«clásico»</em> HTML (text/html), la variante conocida como HTML5 y una variante XHTML conocida como sintaxis XHTML5 que deberá ser servida como XML.Esta es la primera vez que HTML y XHTML se han desarrollado en paralelo.</p>
 
 <p><code>&lt;section&gt;,&lt;nav&gt;,&lt;article&gt;,&lt;aside&gt;,&lt;footer&gt;,&lt;video&gt;,&lt;audio&gt;, entre otros.</code></p>
+<!--code nos permite introducir código SIN que se interprete, & escapa ciertos caracteres &lt; hace que ponga un menor que
+&gt es para poner un mayor que, no son interpretados por eso se pueden mostrar y poner como ejemplo, apoyándonos de la codificación de caracteres en XHTML-->
 
-<table align="center" border="3">
+<table align="center" border="3"> <!--Las tablas se encuentran en desuso -->
 <caption>Caractéres especiales</caption>
 <thead>
 <tr>
 	<th>Entidad</th>
-	<th>Carácter</th>
+	<th>Carácter</th> <!--Car&aacute;cter &iquest; en caso de que no tuviera configurado UTF8 así se escapan los caracteres-->
 	<th>Descripción</th>
 </tr>
 </thead>
@@ -152,10 +187,11 @@ El éxito de las .com dependía de webs más dinámicas (a veces llamadas Web 1.
 |________________________________________________|
 </pre>
 
-<img src="imagen.gif" usemap="#mapa_zonas" /> 
+<img src="imagen.gif" usemap="#mapa_zonas" />
+<!-- En una sola imagen se pueden mapear sus elementos y esos elementos pueden comportarse de cierta forma--> 
 <map name="mapa_zonas">
   <area shape="rect" coords="20,25,84,113" href="#" />
-  <area shape="polygon" coords="90,25,162,26,163,96,89,25,90,24" href="#" />
+  <area shape="poly" coords="90,25,162,26,163,96,89,25,90,24" href="#" />
   <area shape="circle" coords="130,114,29" href="#" />
   <area shape="rect" coords="19,156,170,211" href="#" />
   <area shape="default" nohref="nohref" />
@@ -164,6 +200,7 @@ El éxito de las .com dependía de webs más dinámicas (a veces llamadas Web 1.
 <hr/>
 <h1>Contacto</h1>
 <fieldset>
+  <!--Sirve como los formularios, agrupan elementos-->
   <legend>Datos básicos</legend>
  
   <label for="nombre">Nombre</label> <br/>
