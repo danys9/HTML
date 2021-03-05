@@ -13,9 +13,15 @@
    <body>
       <h1>New HTML5 Input Types</h1>
       <form method = "post" autocomplete = "on" action="#">
+         <!--Formulario que se manda con un post que se autocompleta a algún lugar
+         Poner el input y dependiendo de lo que hagamos generar otro input, tipo de entrada que vamos a tener
+         -->
          <p><label>First Name:
             <input type = "text" id = "firstName" 
-               placeholder = "First name" />(First name)
+               placeholder = "First name" required/>(First name)
+               <!--Required obliga a que cuando se desee mandar el formulario, se tenga que llenar ese campo-->
+               <!--En este formulario el id no sirve para nada, a menos que tengamos una hoja de estilo css o lo usemos con
+               javascript, si quiero afectar varias cosas uso class, si sólo quiero modificar una cosa es con id-->
             </label></p>
          <p><label>Last Name:
             <input type = "text" id = "lastName" 
@@ -33,6 +39,7 @@
                <option value = "Virgo">
                <option value = "Libra">
 			   <option value = "Ophiuchus">
+               <!--En caso de que aceptaran un nuevo signo zodiacal, lo podemos agregar en una lista desplegable-->
                <option value = "Scorpio">
                <option value = "Sagittarius">
                <option value = "Capricorn">
