@@ -1,58 +1,20 @@
+<!--Con el inspector de código del browser o el visual inspector, podemos ver qué está ocurriendo por la página o por qué se ve mal-->
 <!DOCTYPE html>
 <html>
    <head>
       <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,600,700i,800|Open+Sans|Roboto:300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-      <meta charset = "ISO-8859-1">
+      <meta charset = "UTF-8"> <!--Indica la codificación del archivo-->
+      <!--Uso UTF-8 Para que me permita poner acentos y caracteres especiales, depende de la configuración del servidor el qué protocolo o codificación usar-->
       <title>Styles</title>
-	<style type = "text/css">
-         em{
-	    font-weight: 900;
-            color: pink; 
-	   }   
-         h1{
-            font-family: 'Roboto', sans-serif;
-	    position: absolute;
-            top: 20px;
-            left: 200px;
-            z-index: 3;
-            font-size: 20pt;color: purple;		 }
-         h2       { font-family: tahoma, helvetica, sans-serif; 
-				position: absolute;
-                 top: 60px;
-                 left: 150px;
-                 z-index: 3;
-                 font-size: 20pt;color: blue;		 }				 
-         p{ font-size: 12pt;
-            font-family: arial, sans-serif; 
-	  }
-	  .background_image   
-	         { position: absolute;
-                 top: 0px;
-                 left: 0px;
-                 z-index: 1; }
-          .foreground_image   { position: absolute;
-                 top: 25px;
-                 left: 100px;
-                 z-index: 2; }
-	.text1    { position: absolute;
-                 top: 120px;
-                 left: 150px;
-                 z-index: 3;
-                 font-size: 20pt;
-                 font-family: tahoma, geneva, sans-serif; } 
-	.text2    { position: absolute;
-                 top: 150px;
-                 left: 150px;
-                 z-index: 3;
-                 font-size: 40pt;
-                 font-family: tahoma, geneva, sans-serif;
-                 color: red; } 				 
 
-      </style>
+   <!--Hoja de estilo embebida, si quito la hoja de estilo, los elementos originales, los puedo acomodar de diferentes formas. Los elementos al
+   estar en la hoja de estilo con el mismo nombre de clase y el mismo rango de pixeles, se amontonan al verlos en la pantalla. -->
+	<style type = "text/css">    
+   </style>
    </head>
    <body>
       <h1>FCA UNAM</h1>
-      <h2>Desarrollo de sitios web con transacciones en l�nea</h1>
+      <h2>Desarrollo de sitios web con transacciones en línea</h2> <!--Se corrigió que una etiqueta abriera con h2 y cerrara con h1-->
       <p><img src = "images/background_image.png" class = "background_image"
          alt = "First positioned image" /></p>
       
@@ -64,11 +26,15 @@
       <!-- The style attribute allows you to declare -->
       <!-- inline styles. You should separate multiple -->
       <!-- style properties with a semicolon. -->
-      <p class = "text1">This text has the 
+      <!--Font family indica el tipo de fuentes de familia que vamos a tener. Z index hace que los elementos se sobrepongan a otros elementos
+         o que se posicionen en una parte del eje de la profundidad-->
+      <p class = "text1" style = background-color:aqua> This text has the 
+      
          <em>font-size</em> style applied to it, making it 20pt.
       </p>
 
-      <p class = "text1">
+      <p class = "text2"> 
+         <!--Para solucionar el problema de que se encimen puedo poner otro nombre de clase al párrafo, o cambiar el absoluto o relativo de los párrafos-->
          This text has the <em>font-size</em> and 
          <em>color</em> styles applied to it, making it
          20pt and deep sky blue.</p>
