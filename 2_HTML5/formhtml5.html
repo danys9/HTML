@@ -8,86 +8,86 @@
    <head>
       <meta charset="UTF-8"><!-- Codificaci�n de caract�res, UTF-8 es el m�s utilizado y ISO-8859-1 se utiliza para caract�res latinos -->	  
 	  <!-- Pueden incluirse instrucciones especiales de formato de documento CSS -->	  
-      <title>New HTML5 Input Types</title><!-- Elemento anidado que describe las p�ginas web, identificador cuando se agrega a marcadores o favoritos -->	  
+      <title>Nuevos Tipos de Entrada HTML5</title><!-- Elemento anidado que describe las p�ginas web, identificador cuando se agrega a marcadores o favoritos -->	  
    </head>
    <body>
-      <h1>New HTML5 Input Types</h1>
+      <h1>Nuevos Tipos de Entrada HTML5</h1>
       <form method = "post" autocomplete = "on" action="#">
          <!--Formulario que se manda con un post que se autocompleta a algún lugar
          Poner el input y dependiendo de lo que hagamos generar otro input, tipo de entrada que vamos a tener
          -->
-         <p><label>First Name:
+         <p><label>Primer nombre:
             <input type = "text" id = "firstName" 
-               placeholder = "First name" required/>(First name)
+               placeholder = "Introduce aquí tu nombre" required/>(Primer nombre)
                <!--Required obliga a que cuando se desee mandar el formulario, se tenga que llenar ese campo-->
                <!--En este formulario el id no sirve para nada, a menos que tengamos una hoja de estilo css o lo usemos con
                javascript, si quiero afectar varias cosas uso class, si sólo quiero modificar una cosa es con id-->
             </label></p>
-         <p><label>Last Name:
+         <p><label>Apellido Paterno:
             <input type = "text" id = "lastName" 
-               placeholder = "Last name" />(Last name)
+               placeholder = "Introduce aquí tu apellido" />(Apellido Paterno)
             </label></p>
-         <p><label for = "txtList">Astrological Sign:
+         <p><label for = "txtList">Signo Zodiacal:
             <input type = "text" id = "txtList" 
-               placeholder = "Select one" list = "sign" />
+               placeholder = "Selecciona uno" list = "sign" />
             <datalist id = "sign">
                <option value = "Aries">
-               <option value = "Taurus">
-               <option value = "Gemini">
-               <option value = "Cancer">
+               <option value = "Tauro">
+               <option value = "Géminis">
+               <option value = "Cáncer">
                <option value = "Leo">
                <option value = "Virgo">
                <option value = "Libra">
 			   <option value = "Ophiuchus">
                <!--En caso de que aceptaran un nuevo signo zodiacal, lo podemos agregar en una lista desplegable-->
-               <option value = "Scorpio">
-               <option value = "Sagittarius">
-               <option value = "Capricorn">
-               <option value = "Aquarius">
-               <option value = "Pisces">   
+               <option value = "Escorpión">
+               <option value = "Sagitario">
+               <option value = "Capricornio">
+               <option value = "Acuario">
+               <option value = "Piscis">   
             </datalist>
          </label></p>
          <p>
             <label>Color:
                <input type = "color" autofocus /> 
-                  (Hexadecimal code such as #ADD8E6)
+                  (Código hexadecimal tal como #88FBFD)
             </label>
          </p>
          <p>
-            <label>Date:
+            <label>Fecha:
                <input type = "date" /> 
                   (dd-mm-yyyy)
             </label>
          </p>
 
          <p>
-            <label>Datetime-local:
-               <input type = "datetime-local" /> 
-                  (yyyy-mm-ddThh:mm, such as 2012-01-27T03:15)
+            <label>Fecha y hora local:
+               <input type = "" placeholder="Introduce aquí tu fecha y hora" /> 
+                  (yyyy-mm-ddThh:mm, tal como 2012-01-27T03:15)
             </label>
          </p>
          <p>
             <label>Email:
-               <input type = "email" placeholder = "name@domain.com" 
-                  required /> (name@domain.com)
+               <input type = "email" placeholder = "Introduce aquí tu correo" 
+                  required /> (nombre@dominio.com)
             </label>
          </p>
          <p>
             <label>Month:
-               <input type = "month" /> (yyyy-mm)
+               <input type = "month" placeholder="Introduce aquí el mes" /> (yyyy-mm)
             </label>
          </p>
          <p>
-            <label>Number:
+            <label>Número:
                <input type = "number" 
                   min = "0"
-                  max = "8"
+                  max = "7"
                   step = "2"
-                  value = "4" />
-            </label> (Enter a number between 0 and 7)
+                  value = "6" />
+            </label> (Introduce un número entre el 0 y el 7)
          </p>
          <p>
-            <label>Range:
+            <label>Rango:
                0 <input type = "range" 
                   min = "0"
                   max = "20"
@@ -95,9 +95,9 @@
             </label>
          </p>
          <p>
-            <label>Search:
-               <input type = "search" placeholder = "search query" />
-            </label> (Enter your search query here.)
+            <label>Buscar:
+               <input type = "search" placeholder = "Busca una consulta" />
+            </label> (Introduce la búsqueda de tu consulta aquí)
          </p>
          <p>
             <label>Tel:
@@ -107,49 +107,49 @@
             </label>
          </p>
          <p>
-            <label>Time:
+            <label>Hora:
                <input type = "time" /> (hh:mm)
             </label>
          </p>
          <p>
             <label>URL:
                <input type = "url" 
-                  placeholder = "http://www.domainname.com" /> 
-                  (http://www.domainname.com)
+                  placeholder = "http://www.nombredominio.com" /> 
+                  (http://www.nombredominio.com)
             </label>
          </p>
 		 <p>
-            <label>Password:
+            <label>Contraseña:
                <input type = "password" 
-                  placeholder = "querty..ok not" /> 
+                  placeholder = "querty..ok no" /> 
                   (querty | 123456 | teamo | batman)
             </label>
          </p>
          <p>
-            <label>Week:
+            <label>Semana:
                <input type = "week" /> 
-                  (yyyy-Wnn, such as 2012-W01)
+                  (yyyy-Wnn, tal como 2012-S01)
             </label>
          </p>
 		 
 		 
 		 
 		 <p>
-            <label>Things you liked:</label><br>
+            <label>Gustos/Preferencias:</label><br>
 
-            <label>Site design
+            <label>Diseño del sitio
                <input name = "thingsliked" type = "checkbox" 
                   value = "Design"></label>
             <label>Links
                <input name = "thingsliked" type = "checkbox" 
                   value = "Links"></label>
-            <label>Ease of use
+            <label>Facilidad de uso
                <input name = "thingsliked" type = "checkbox" 
                   value = "Ease"></label> 
-            <label>Images 
+            <label>Imágenes 
                <input name = "thingsliked" type = "checkbox" 
                   value = "Images"></label>
-            <label>Source code
+            <label>Código fuente
                <input name = "thingsliked" type = "checkbox" 
                   value = "Code"></label>
          </p>
@@ -158,27 +158,27 @@
          <!-- and checkboxes is that only one radio button -->
          <!-- in a group can be selected. -->
          <p>
-            <label>How did you get to our site?:</label><br>
+            <label>¿Cómo conociste/llegaste a nuestro sitio?:</label><br>
 
-            <label>Search engine
+            <label>Por un buscador
                <input name = "howtosite" type = "radio"
                   value = "search engine" checked></label>
-            <label>Links from another site
+            <label>Por un Link desde otro sitio
                <input name = "howtosite" type = "radio" 
                   value = "link"></label> 
-            <label>Web site
+            <label>Por un sitio web
                <input name = "howtosite" type = "radio" 
                   value = "deitel.com"></label>
-            <label>Reference in a book
+            <label>Por referencias de un libro
                <input name = "howtosite" type = "radio" 
                   value = "book"></label>
-            <label>Other
+            <label>Otro
                <input name = "howtosite" type = "radio" 
                   value = "other"></label>
          </p>
          <p>
-            <input type = "submit" value = "Submit" />
-            <input type = "reset" value = "Clear" />
+            <input type = "submit" value = "Enviar" />
+            <input type = "reset" value = "Limpiar" />
          </p>   
       </form>
    </body>
